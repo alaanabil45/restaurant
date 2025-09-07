@@ -220,6 +220,103 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Responsive Design */
+@media (max-width: 1024px) {
+    .form-container {
+        flex-direction: column;
+        max-height: none;
+        width: 90%;
+        margin: auto;
+    }
+
+    .image-side img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        padding: 0;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .form-side {
+        padding: 20px;
+    }
+
+    .name-fields {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .head {
+        height: 70vh;
+        background-position: center top;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+
+    .form-side h2 {
+        font-size: 20px;
+    }
+
+    .form-side input,
+    select,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .social-icons i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        height: 60vh;
+    }
+
+    .form-side h2 {
+        font-size: 18px;
+    }
+
+    .form-side input,
+    select,
+    button {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .footer-left img {
+        max-width: 100%;
+    }
+
+    .footer-center,
+    .footer-right {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -297,40 +394,7 @@
         </section>
     </div>
 
-    <div class="f">
-        <p>Experience the finest dining with our gourmet dishes and exceptional service.</p>
-    </div>
-
-    <footer>
-
-        <div class="footer-left">
-            <img src="img/image.png" alt="Restaurant Logo" />
-        </div>
-        <div class="footer-center">
-            <h3>ADDRESS</h3>
-            <p><i class="fas fa-map-marker-alt"></i> 123 Foodie Street, Flavor Town</p>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-        <div class="footer-right">
-            <h3>Opening Hours</h3>
-            <p>Mon - Fri: 10:00 AM - 10:00 PM</p>
-            <p>Sat - Sun: 12:00 PM - 11:00 PM</p>
-            <h3>Contact Us</h3>
-            <p>Phone: +1 234 567 890</p>
-            <p>Email: contact@restaurant.com</p>
-        </div>
-
-    </footer>
-
-    <div class="ff">
-        <p>&copy; 2025 All Rights Reserved.</p>
-    </div>
-
+    
 </body>
 
 </html>

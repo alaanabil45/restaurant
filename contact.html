@@ -216,6 +216,92 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Responsive Design */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .outer-border {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .contact-form form input,
+    .contact-form form select,
+    .contact-form form textarea {
+        padding: 10px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .outer-border {
+        width: 70%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form form input,
+    .contact-form form select,
+    .contact-form form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info p {
+        font-size: 0.85rem;
+    }
+
+    .outer-border {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>

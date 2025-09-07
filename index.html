@@ -264,6 +264,156 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Responsive Design */
+
+/* For large tablets and small desktops */
+@media (max-width: 1024px) {
+    .chef-section {
+        flex-direction: column;
+        padding: 40px 10%;
+        text-align: center;
+    }
+
+    .chef-section img {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .meals-row {
+        gap: 20px;
+    }
+
+    .meal {
+        width: 45%;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .menu-column {
+        width: 100%;
+    }
+
+    .special-section {
+        flex-direction: column;
+        padding: 20px 10%;
+    }
+
+    .special-images {
+        width: 80%;
+        grid-template-columns: 1fr;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .special-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .head {
+        height: 70vh;
+        background-position: center top;
+    }
+
+    .h {
+        font-size: 60px;
+        margin-top: 120px;
+    }
+
+    
+
+    .meal img {
+        height: 180px;
+    }
+
+    .meal-name {
+        font-size: 1rem;
+    }
+
+    .meal-price {
+        font-size: 0.9rem;
+    }
+
+    .meal-ingredients {
+        font-size: 0.8rem;
+    }
+
+    .menu-item-name-price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .head {
+        height: 60vh;
+    }
+
+    .h {
+        font-size: 40px;
+        margin-top: 80px;
+    }
+
+    .chef-section img {
+        width: 100%;
+    }
+
+    .meal {
+        width: 100%;
+    }
+
+    .meal img {
+        height: 150px;
+    }
+
+    .menu-item-name-price {
+        font-size: 0.9rem;
+    }
+
+    .menu-item-ingredients {
+        font-size: 0.8rem;
+    }
+
+    .special-images {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .special-text {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
